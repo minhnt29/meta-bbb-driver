@@ -1,0 +1,21 @@
+diff --git a/arch/arm/boot/dts/BB-SPIDEV0-00A0.dtso b/arch/arm/boot/dts/BB-SPIDEV0-00A0.dtso
+index 3b5b06d8453d..4457d0d2c0f8 100644
+--- a/arch/arm/boot/dts/BB-SPIDEV0-00A0.dtso
++++ b/arch/arm/boot/dts/BB-SPIDEV0-00A0.dtso
+@@ -64,7 +64,7 @@
+ 		symlink = "bone/spi/0.0";
+ 
+ 		reg = <0>;
+-		spi-max-frequency = <16000000>;
++		spi-max-frequency = <40000000>;
+ 		spi-cpha;
+ 	};
+ 
+@@ -76,6 +76,6 @@
+ 		symlink = "bone/spi/0.1";
+ 
+ 		reg = <1>;
+-		spi-max-frequency = <16000000>;
++		spi-max-frequency = <40000000>;
+ 	};
+ };

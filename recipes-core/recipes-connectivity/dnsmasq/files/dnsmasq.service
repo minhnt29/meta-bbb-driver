@@ -1,0 +1,13 @@
+[Unit]
+Description=DNS and DHCP server for USB Ethernet
+After=usb-gadget.service
+Requires=usb-gadget.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/dnsmasq-usb.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
